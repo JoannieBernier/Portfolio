@@ -1,0 +1,382 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family:"bebas neue", "times new roman", times, serif;
+}
+
+nav {
+    background-color: #FFF;
+    width: 100%;
+    height: 10vh;
+    font-size: 22px;
+}
+
+.nav_scrollbar{
+    position: fixed;
+    top: 0;
+    z-index: 5;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style:none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #202;
+}
+
+.texte_image a {
+    text-decoration: none;
+    font-size: 22px;
+    color: #FFF;
+}
+
+.texte_image li {
+    margin: 15px 0px;
+}
+
+nav .menu {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .menu .logo {
+    position: relative;
+    left: 40px;
+}
+
+.connexion, .deconnexion {
+    position: relative;
+    right: 40px;
+}
+
+nav .menu .row {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex: 0.6;
+}
+
+nav .menu img {
+    width: 90px;
+    height: 50px;
+}
+
+.conteneur {
+    position: relative;
+    margin-top: 10vh;
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    background-color: #7DBBC9;
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+}
+
+
+.header_administration {
+    position: relative;
+    height: 90%;
+}
+
+.texte_image {
+    position: absolute;
+    top: 170px;
+    text-align: center;
+    z-index: 1;
+}
+
+.image_header {
+    max-width: 50%;
+    min-width: 500px;
+    height: auto;
+    filter: brightness(75%);
+}
+
+.projet {
+    position: relative;
+    max-width: 20%;
+    min-width: 200px;
+}
+
+.utilisateur {
+    position: relative;
+    max-width: 20%;
+    min-width: 200px;
+}
+
+.conteneur_option {
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteneur_option p{
+    width: 100%;
+    margin-top: 0px;
+    padding-bottom: 10px;
+}
+
+.portfolio_administration,
+.utilisateur_administration {
+    padding: 50px 0px;
+}
+
+.projet img {
+    width: 100%;
+}
+
+#portfolio, 
+#utilisateur,
+#biographie, 
+#contact {
+    margin: 60px 140px;
+}
+
+#portfolio:target,
+#biographie:target,
+#contact:target {
+    padding-top: 60px;
+    margin-top: -60px;
+}
+
+#portfolio h1,
+#portfolio h2,
+#portfolio h3,
+#utilisateur h1,
+#utilisateur h2,
+#biographie h1,
+.conteneur_information p,
+.conteneur_contact form,
+.conteneur_option,
+.conteneur_users {
+    text-align: center;
+}
+
+.conteneur_users {
+    font-size: 20px;
+    min-height: 100px;
+}
+
+#biographie p, 
+.conteneur_information p, 
+.conteneur_description p {
+    font-size: 20px;
+    font-family:"Quicksand", "times new roman", times, serif;
+}
+
+.conteneur_information {
+    position: relative;
+    top: -30px;
+    min-height: 145px;
+    border: 2px solid #202;
+    background-color: #FFF;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;  
+    overflow-wrap: break-word;
+}
+
+.conteneur_description {
+    position: absolute;
+    width: 150%;
+    top: 0px;
+    margin-left: -25%;
+    z-index: 2;
+    background-color: rgb(32, 32, 32, 0.9);
+    color: #FFF;
+    text-align: center;
+    overflow-wrap: break-word;
+    visibility: hidden;
+}
+
+.conteneur_description p {
+    padding: 15px;
+}
+
+.conteneur_description_admin {
+    margin-top: 144px;
+}
+
+#contact, 
+#modifierProjet,
+.conteneur_portfolio,
+#ajouterProjet,
+.conteneur_utilisateur,
+#ajouterUtilisateur,
+#modifierUtilisateur {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.conteneur_contact {
+    background-color: #7DBBC9;
+    min-width: 300px;
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    align-items: center;
+}
+
+.conteneur_connexion {
+    visibility: hidden;
+    background-color: rgb(250, 250, 250, 0.9);
+    border: 2px solid #202;
+    position: absolute;
+    padding: 5px;
+    right: 40px;
+}
+
+.ajout_projet,
+.ajout_utilisateur {
+    display: flex;
+    justify-content: center;
+}
+
+.ajout_projet .button,
+.ajout_utilisateur .button {
+    width: 200px;
+}
+
+.button {
+    background-color: #7DBBC9; 
+    width: 100%;
+    border: none;
+    color: #202;
+    padding: 15px 0px;
+    margin: 5px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  footer {
+    width: 100%;
+    height: 270px;
+    background-color: #7DBBC9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteneur_reseau, .conteneur_newletters {
+    width: 100%;
+    height: 100%;
+}
+
+.liste_icon,
+.conteneur_newletters {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.liste_icon{
+    justify-content: flex-end;
+    margin-right: 40px;
+}
+
+.conteneur_newletters {
+    justify-content: flex-start;
+    margin-left: 40px;
+}
+
+.liste_icon .logo img {
+    width: 48px;
+    height: 48px;
+}
+
+.liste_icon li {
+    margin: 0px 15px;
+}
+
+@media screen and (max-width: 576px) {
+
+    nav {
+        height: 25vh;
+    }
+
+    nav .menu li {
+        width: 100vw;
+        text-align: center;
+    }
+
+    nav .menu, nav .menu .row {
+        flex-direction: column;
+        flex: 1;
+    }
+
+    nav .menu .logo {
+        position: relative;
+        left: 0px;
+    }
+
+    header {
+        height: 60vh;
+    }
+
+    .image_header {
+        min-width: 90vw;
+    }
+
+    .connexion, .deconnexion {
+        position: relative;
+        right: 0px;
+    }
+
+    .conteneur {
+        position: relative;
+        margin-top : 25vh;
+        height: 100%;
+        width: 100%;
+    }
+
+    #portfolio:target,
+    #biographie:target,
+    #contact:target {
+        padding-top: 25vh;
+        margin-top:  -25vh;
+    }
+
+    #biographie {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        flex-direction: column;
+        flex: 1;
+        height: auto;
+    }
+
+    .conteneur_newletters {
+        justify-content: center;
+        margin-left: 0px;
+    }
+
+    .liste_icon{
+        justify-content: center;
+        margin-right: 0px;
+    }
+
+    .liste_icon,
+    .conteneur_newletters {
+        margin: 15px 0px;
+}
+  }
+  
