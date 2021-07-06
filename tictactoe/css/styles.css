@@ -1,0 +1,89 @@
+body {
+    margin: 0px;
+    height: 100vh;
+    background-color: #202020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tictactoe {
+    width: 60vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+}
+
+.introduction,
+.conteneur_jeu,
+.fin {
+    text-align: center;
+}
+
+.introduction h1 {
+    font-size: 60px;
+    color: #FFF;
+}
+
+.introduction .btn {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.conteneur_jeu {
+    min-width: 300px;
+    width: 50vw;
+    max-width: 50vh;
+    min-height: 300px;
+    height: 50vh;
+    max-height: 50vw;
+    color: #FFF;
+}
+
+.conteneur_jeu .tourActuel,
+.fin p {
+    font-size: 25px;
+}
+
+.boxes {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.boxes .box {
+    min-height: 100px;
+    min-width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 33.333333%;
+    box-sizing: border-box;
+    margin-left: -3px;
+    margin-top: -3px;
+    border: 3px solid #909090;
+    background-color: #101010;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: #FFF;
+}
+
+.fin {
+    color: #FFF;
+}
+   
+.fade-enter-active, .fade-leave-active {
+    transition: all 0.7s;
+}
+
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}
+
+.surbrillance:hover {
+    background-color: #303030 ;
+}
+

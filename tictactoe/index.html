@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Projet Synthèse</title>
+</head>
+<body>
+    <div id="app">
+        <div class="tictactoe">
+            <template v-if="debut">
+                <template v-if="ouvert">
+                    <div class="introduction">
+                        <h1>Tic-Tac-Toe</h1>
+                        <button  class="btn" @click="ouvert = !ouvert">Jouer!</button>
+                    </div>
+                </template>
+                <template v-if="!ouvert">
+                    <div class="conteneur_jeu">
+                        <h1>Tic Tac Toe</h1>
+                        <div class="boxes">
+                            <div class="box" v-for="(box, i) in boxes" @click="boxCliquee(i)" :class="{ surbrillance: isActive }">
+                                <transition name="fade"> 
+                                    <span v-show="box != null">
+                                        {{ box }} 
+                                    </span> 
+                                </transition>      
+                            </div>
+                        </div>
+                        <p class="tourActuel">Tour actuel: {{ tour }}</p>
+                    </div>
+                </template>
+            </template>
+            <template v-if="fin">
+                <div class="fin">
+                    <h1>Tic Tac Toe</h1>
+                    <p class="winLose">Le joueur {{ tour }} a gagné!</p>
+                </div>
+            </template>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
